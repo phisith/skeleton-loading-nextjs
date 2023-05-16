@@ -1,4 +1,4 @@
-Skeleton-loading-nextjs
+## Skeleton-loading-nextjs
 
 Setup:
 
@@ -13,3 +13,11 @@ npm run dev
 ```
 
 then go to http://localhost:3000/dashboard
+
+## Stack:
+
+- NextJs 13 (App Router \* new structure)
+- TailwindCSS
+- useSWR
+- axios
+- mockApi: JSONPlaceholder https://jsonplaceholder.typicode.com/

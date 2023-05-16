@@ -15,16 +15,19 @@ export default function Page() {
           title="User"
           data={userInfo.data}
           isLoading={userInfo.isLoading}
+          isError={userInfo.error}
         />
         <ListBox
           title="Posts"
           data={postsInfo.data}
           isLoading={postsInfo.isLoading}
+          isError={postsInfo.error}
         />
         <ListBox
           title="Comments"
           data={commentsInfo.data}
           isLoading={commentsInfo.isLoading}
+          isError={commentsInfo.error}
         />
       </section>
     </div>

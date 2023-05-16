@@ -11,4 +11,8 @@ export interface ListBoxProps {
    * data
    */
   data: any;
+  /**
+   * for check error & error message
+   */
+  isError: boolean;
 }

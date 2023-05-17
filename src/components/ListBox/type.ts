@@ -4,15 +4,8 @@ export interface ListBoxProps {
    */
   title: string;
   /**
-   * to show Skeleton loading
+   * url for fetch data
    */
-  isLoading: boolean;
-  /**
-   * data
-   */
-  data: any;
-  /**
-   * for check error & error message
-   */
-  isError: boolean;
+  url: string;
+  params: any;
 }

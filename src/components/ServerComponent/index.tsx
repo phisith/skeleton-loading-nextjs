@@ -1,19 +1,20 @@
 import requestManager from "@/lib/requestManager";
 import sleep from "@/lib/sleep";
 
-async function getData() {
+async function getData(url: string) {
   await sleep(Math.floor(Math.random() * 5000));
-  await requestManager("posts")
+  const data = await requestManager(url)
     .then((res) => {
       return res.data;
     })
     .catch((err) => {
-      throw err;
+      throw new Error("Failed to fetch data");
     });
+  return data;
 }
 
 export default async function Posts() {
-  const posts: any = await getData();
+  const posts: any = await getData("posts");
 
-  return <>{Object.keys(posts).length > 0}</>;
+  return <>{Object.keys(posts).length}</>;
 }

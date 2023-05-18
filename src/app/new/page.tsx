@@ -7,7 +7,7 @@ import { ErrorBoundary } from "react-error-boundary";
 export default function Page() {
   return (
     <>
-      <h1>Server side component</h1>
+      <h1>Posts</h1>
       <ErrorBoundary fallback={<div>Error</div>}>
         <Suspense fallback={<>Loading...</>}>
           {/* @ts-expect-error Server Component */}

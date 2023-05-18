@@ -7,5 +7,4 @@ export interface ListBoxProps {
    * url for fetch data
    */
   url: string;
-  params: any;
 }
